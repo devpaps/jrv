@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(13,169,242, .4) url(/assets/img/background.png)center center;
+  background-size: cover;
+  background-size: 50%;
+  background-attachment: fixed;
+  font-family: 'Oswald', sans-serif;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*************************** Logo ***************************/
+
+.logo {
+  text-align: center;
+}
+
+.logo h1 {
+  letter-spacing: 4px;
+  margin: 0;
+  font-weight: 700;
+  font-size: 60px;
+  text-shadow: 1px 1px 2px #000;
+  color: #fff;
+}
+
+/*************************** Nav ***************************/
+
+nav {
+
+}
+
+nav li {
+  display: inline;
+  padding: .5rem 0 .5rem 0;
+  list-style: none;
+}
+
+nav li {
+  transition: background-color .5s;
+}
+
+nav li:hover {
+  background-color: rgba(0,0,0, .9);
+}
+
+ul {
+  background-color: rgba(0,0,0, .5);
+  padding: 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  padding: .5rem 1rem .5rem 1rem;
+}
+
+#navigation #tjänster, #navigation #maskinpark, #navigation #referenser,
+#navigation #kontakt, #navigation #omoss {
+  background: #E71D36;
+}
+
+
+/*************************** Main ***************************/
+
+.container_one {
+
+}
+
+.container_two {
+
+}
+/*************************** Footer ***************************/
+
+footer {
+  clear: both;
+  text-align: center;
+  background-color: rgba(0,0,0, .5);
+}
+
+footer p {
+  padding: 1rem;
+  letter-spacing: 3px;
+  color: #fff;
+  font-weight: 300;
+}
