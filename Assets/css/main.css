@@ -3,7 +3,7 @@
 }
 
 body {
-  background: rgba(13,169,242, .4) url(/assets/img/background.png)center center;
+  background: rgba(13,169,242, .4) url(/Assets/img/background.png)center center;
   background-size: cover;
   background-size: 50%;
   background-attachment: fixed;
