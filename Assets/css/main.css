@@ -73,6 +73,14 @@ a {
 
 /*************************** Main ***************************/
 
+img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  background-size: cover;
+  background-position: center;
+}
+
 .container_one {
 
 }
