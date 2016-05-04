@@ -2,12 +2,19 @@
   box-sizing: border-box;
 }
 
+.text {
+  font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  font-family: 'Patua One', cursive;
+}
+
 body {
-  background: rgba(13,169,242, .4) url(/Assets/img/background.png)center center;
+  background: rgba(4,114,165, .7) url(/assets/img/background.png)center center;
   background-size: cover;
   background-size: 50%;
   background-attachment: fixed;
-  font-family: 'Oswald', sans-serif;
 }
 
 .wrapper {
@@ -24,26 +31,20 @@ body {
 .logo h1 {
   letter-spacing: 4px;
   margin: 0;
-  font-weight: 700;
-  font-size: 60px;
+  font-size: 70px;
   text-shadow: 1px 1px 2px #000;
   color: #fff;
 }
 
 /*************************** Nav ***************************/
 
-nav {
-
-}
-
 nav li {
   display: inline;
-  padding: .5rem 0 .5rem 0;
-  list-style: none;
+  padding: 4px 0 7px;
 }
 
 nav li {
-  transition: background-color .5s;
+  transition: background-color .8s;
 }
 
 nav li:hover {
@@ -55,42 +56,172 @@ ul {
   padding: 0;
   text-align: center;
   margin-bottom: 2rem;
+  list-style-type: none;
 }
 
 a {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  font-weight: 400;
   padding: .5rem 1rem .5rem 1rem;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
 }
 
-#navigation #tjänster, #navigation #maskinpark, #navigation #referenser,
+#navigation #tjanster, #navigation #maskinpark, #navigation #referenser,
 #navigation #kontakt, #navigation #omoss {
   background: #E71D36;
 }
 
 
-/*************************** Main ***************************/
+/*************************** Main/Hem ***************************/
 
-img {
-  max-width: 100%;
-  margin: auto;
-  display: block;
+.front-pic {
+  max-width: 90%;
+  width: auto;
+  height: 700px;
+  background: url(/assets/img/grusbil.jpg)center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  margin: 0 auto;
 }
 
-.container_one {
+/*************************** Main/Tjänster ***************************/
 
+#tjanster-header {
+  text-align: center;
+  margin: 5% 0 5% 0;
+  font-size: 40px;
+  color: #fff;
+  letter-spacing: 3px;
 }
 
-.container_two {
-
+.section-one {
+  overflow: auto;
+  margin-bottom: 5%;
+  padding: 1.2%;
 }
+
+#tjanster-pic1 {
+  width: 600px;
+  height: auto;
+  margin-left: 2%;
+  float: left;
+}
+
+.section-one-info {
+  width: 50%;
+  display: inline-block;
+  padding: 2% 5% 2% 5%;
+  margin-left: 3%;
+  background: white;
+  position:relative;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.section-one-info:before, .section-one-info:after
+{  content:"";
+  position:absolute;
+  z-index:-1;
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  top:50%;
+  bottom:0;
+  left:10px;
+  right:10px;
+  border-radius:100px / 10px;
+}
+
+.section-one-info > p {
+  margin-bottom: 3%;
+}
+
+.section-one-button {
+  display: inline-block;
+  margin-top: 0;
+  float: right;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  padding: 2% 4%;
+  text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+  -webkit-border-radius: 9.72972972972973px;
+  -moz-border-radius: 9.72972972972973px;
+  border-radius: 9.72972972972973px;
+  background: rgb(210, 20, 20);
+  background: -moz-linear-gradient(90deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+  background: -webkit-linear-gradient(90deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+  background: -o-linear-gradient(90deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+  background: -ms-linear-gradient(90deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+  background: linear-gradient(0deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+  -webkit-box-shadow: 0px 3px 9px rgba(50, 50, 50, 0.65);
+  -moz-box-shadow:    0px 3px 9px rgba(50, 50, 50, 0.65);
+  box-shadow:         0px 3px 9px rgba(50, 50, 50, 0.65);
+}
+
+/***************************/
+
+.section-two {
+  overflow: auto;
+  padding: 1.2%;
+}
+
+#tjanster-pic2 {
+  width: 510px;
+  height: auto;
+  margin-right: 2%;
+  float: right;
+}
+
+.section-two-info {
+  width: 50%;
+  display: inline-block;
+  padding: 2% 5% 2% 5%;
+  margin-left: 2%;
+  background: white;
+  position:relative;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.section-two-info:before, .section-two-info:after
+{  content:"";
+  position:absolute;
+  z-index:-1;
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  top:50%;
+  bottom:0;
+  left:10px;
+  right:10px;
+  border-radius:100px / 10px;
+}
+
+.section-two-button {
+  float: left;
+  display: inline-block;
+  margin-top: 0;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  padding: 2% 4%;
+  text-shadow: 0px -1px 0px rgba(30, 30, 30, 0.8);
+  -webkit-border-radius: 9.72972972972973px;
+  -moz-border-radius: 9.72972972972973px;
+  border-radius: 9.72972972972973px;
+  background: rgb(210, 20, 20);
+  background: -moz-linear-gradient(90deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+  background: -webkit-linear-gradient(90deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+  background: -o-linear-gradient(90deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+  background: -ms-linear-gradient(90deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+  background: linear-gradient(0deg, rgb(210, 20, 20) 30%, rgb(250, 20, 20) 70%);
+  -webkit-box-shadow: 0px 3px 9px rgba(50, 50, 50, 0.65);
+  -moz-box-shadow:    0px 3px 9px rgba(50, 50, 50, 0.65);
+  box-shadow:         0px 3px 9px rgba(50, 50, 50, 0.65);
+}
+
+/*************************** Main/Maskinpark ***************************/
+
+
 /*************************** Footer ***************************/
 
 footer {
+  margin-top: 5%;
   clear: both;
   text-align: center;
   background-color: rgba(0,0,0, .5);
