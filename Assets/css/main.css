@@ -85,22 +85,17 @@ a {
 #main-pic {
   display: block;
   margin: auto;
+  border-top: 12px solid orange;
+  border-radius: 0 20px;
 }
 
 /*************************** Main/Tjänster ***************************/
 
-#tjanster-header {
-  text-align: center;
-  margin: 5% 0 5% 0;
-  font-size: 40px;
-  color: #fff;
-  letter-spacing: 3px;
-}
+
 
 .section-one {
   overflow: auto;
-  margin-bottom: 5%;
-  padding: 1.2%;
+  margin: 5% 0 5% 0;
 }
 
 #tjanster-pic1 {
@@ -108,14 +103,16 @@ a {
   height: auto;
   margin-left: 2%;
   float: left;
+  border: 5px solid #fff;
 }
 
 .section-one-info {
   border-top: 12px solid orange;
+  border-radius: 0 20px;
   width: 50%;
   display: inline-block;
   padding: 2% 5% 3% 5%;
-  margin-left: 3%;
+  margin: 0 0 5% 3%;
   background: white;
   position:relative;
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -166,18 +163,19 @@ a {
 
 .section-two {
   overflow: auto;
-  padding: 1.2%;
 }
 
 #tjanster-pic2 {
   width: 510px;
   height: auto;
-  margin-right: 2%;
+  margin-right: 3%;
   float: right;
+    border: 5px solid #fff;
 }
 
 .section-two-info {
   border-top: 12px solid orange;
+  border-radius: 20px 0;
   width: 50%;
   display: inline-block;
   padding: 2% 5% 2% 5%;
@@ -232,7 +230,7 @@ a {
   width: 800px;
   height: 500px;
   position: relative;
-  margin: 0 auto;
+  margin: 5% auto 5%;
   -webkit-box-shadow: 4px 4px 14px 0 rgba(0,0,0, .50);
   box-shadow: 4px 4px 14px 2px rgba(0,0,0, .50);
   border-top: 12px solid orange;
@@ -272,7 +270,7 @@ a {
 /*************************** Footer ***************************/
 
 footer {
-  margin-top: 10%;
+  margin-top: 5%;
   clear: both;
   text-align: center;
   background-color: rgba(0,0,0, .5);
