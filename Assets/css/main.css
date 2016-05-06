@@ -12,7 +12,7 @@ h1 {
 }
 
 body {
-  background: url(/assets/img/test-bak-opt.jpg) center center;
+  background: url(../img/test-bak-opt.jpg) center center;
   background-size: 100%;
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased !important;
@@ -224,7 +224,7 @@ a {
 /*************************** Main/Maskinpark ***************************/
 
 .maskin-l70 {
-  background: url(/Assets/img/l70.jpg) top center;
+  background: url(../img/l70.jpg) top center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 800px;
@@ -246,7 +246,7 @@ a {
 }
 
 .maskin-fm12 {
-  background: url(/Assets/img/grusbil.jpg) top center;
+  background: url(../img/grusbil.jpg) top center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 800px;
