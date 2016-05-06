@@ -84,7 +84,7 @@ a {
   display: block;
   margin: auto;
   border-top: 12px solid orange;
-  border-radius: 0 20px;
+  border-radius: 0 20px 0 0;
 }
 
 /*************************** Main/Tjänster ***************************/
