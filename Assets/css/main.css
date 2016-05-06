@@ -12,7 +12,7 @@ h1 {
 }
 
 body {
-  background: url(/Assets/img/test-bak-opt.jpg) center center;
+  background: url(/assets/img/test-bak-opt.jpg) center center;
   background-size: 100%;
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased !important;
