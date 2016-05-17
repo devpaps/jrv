@@ -12,7 +12,11 @@
   <meta name="author" content="name">
   <meta name="description" content="description here">
   <meta name="keywords" content="keywords,here">
+  <link rel="stylesheet" href="Assets/css/normalize.css">
   <link rel="stylesheet" href="Assets/css/main.css">
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+       async defer></script>
+
   </head>
   <body>
     <div class="wrapper">
@@ -24,13 +28,24 @@
         <ul id="navigation">
           <li><a href="tjanster.html">Tjänster</a></li>
           <li><a href="maskinpark.html">Maskinpark</a></li>
-          <li><a href="referenser.html">Referenser</a></li>
           <li><a href="kontakt.html" id="kontakt">Kontakt</a></li>
-          <li><a href="omoss.html">Om oss</a></li>
         </ul>
       </nav>
 
+    <div id="kontakt-card">
+      <div class="kontakta text">
+        <h2>Kontakta oss</h2>
+        <p>Du kan komma i kontakt med oss på flera olika sätt. Välj det sätt som passar just dig!</p>
+        <p>Tel: 070-xxx xx xx <br>
+          Adress: Nifsåsvägen 16 <br>
+          831 52 Östersund</p>
+        <br />
+        <h3>Maila oss på:</h3>
+          <a href="mailto:joe@example.com?subject=feedback">John @ me.com</a>
+      </div>
 
+      <div id="map"></div>
+      </div>
 
       <footer>
         <p>
@@ -38,5 +53,30 @@
         </p>
       </footer>
   </div>
+
+<!-- Creates the map -->
+<script>
+
+function initMap() {
+  var myLatLng = {lat: 63.20908, lng: 14.65123};
+
+  // Create a map object and specify the DOM element for display.
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    scrollwheel: false,
+    zoom: 14
+  });
+
+  // Create a marker and set its position.
+  var marker = new google.maps.Marker({
+    map: map,
+    position: myLatLng,
+    title: "JKV Entreprenad & Transport AB"
+  });
+}
+</script>
+<!-- This script downloads the code required to display maps on your page and will not block the loading of other resources. -->
+  <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
+
   </body>
 </html>
